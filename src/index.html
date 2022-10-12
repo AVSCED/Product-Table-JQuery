@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="add_product_form">
+        <label for="product_sku">
+          <span>Product SKU</span>
+          <input type="number" name="product_sku" id="product_sku" />
+        </label>
+
+        <label for="product_name">
+          <span>Product Name</span>
+          <input type="text" name="product_name" id="product_name" />
+        </label>
+
+        <label for="product_price">
+          <span>Product Price</span>
+          <input type="number" name="product_price" id="product_price" />
+        </label>
+
+        <label for="product_quantity">
+          <span>Product Quantity</span>
+          <input type="number" name="product_quantity" id="product_quantity" />
+        </label>
+        <p class="submit">
+          <input
+            type="button"
+            name="add_product"
+            id="add_product"
+            value="Add Product"
+          />
+          <input
+            type="button"
+            name="updateProduct"
+            id="update_product"
+            value="Update Product"
+          />
+        </p>
+      </div>
+      <div id="notification">
+        <div class="success">
+          Product Added Successfully
+          <a href="#" onclick="successfun()" class="close">X</a>
+        </div>
+        <div class="error">
+          There is some problem.<a href="#" onclick="errorfun()" class="close"
+            >X</a
+          >
+        </div>
+        <div class="errorForm">
+          <a href="#" onclick="errorfun()" class="close"></a>
+        </div>
+        <div class="success1">
+          Product Updated Successfully.<a
+            href="#"
+            onclick="success1fun()"
+            class="close"
+            >X</a
+          >
+        </div>
+      </div>
+      <div id="product_list">
+        <table id="tbl"></table>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./script.js"></script>
+</html>
