@@ -68,6 +68,8 @@ $(document).ready(function () {
         setTimeout(function () {
           $(".success1").css("display", "none");
         }, 5000);
+        $("#add_product").css("display", "block");
+        $("#update_product").css("display", "none");
       }
     }
   });
