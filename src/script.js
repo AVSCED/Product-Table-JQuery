@@ -168,8 +168,13 @@ $(document).ready(function () {
   });
 });
 function del(d) {
-  arrProducts.splice(d, 1);
-  displayTable(arrProducts);
+  if (
+    confirm("Are you Sure you Want to delete the product") == true
+  ) {
+    arrProducts.splice(d, 1);
+    displayTable(arrProducts);
+  }
+
 }
 var update;
 function edi(e) {
